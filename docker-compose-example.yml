@@ -11,14 +11,14 @@ services:
       INHOUSE_BOT_CONNECTION_STRING: postgresql+psycopg2://postgres:@/inhouse_bot
 
       # You need to put your Discord Bot token here
-      INHOUSE_BOT_TOKEN: ⚠ PUT_YOUR_TOKEN_HERE ⚠
+      INHOUSE_BOT_TOKEN: ODM5NDk5NTEwNDQ3MzQxNTY4.YJKi2A.ThMBfqVA1ZTeED7W1tkShIyZyyo
 
       # Those emoji help the bot look good and are defined with discord.py emoji syntax
-      INHOUSE_BOT_TOP_EMOJI: '<:TOP:770815146452451359>'
-      INHOUSE_BOT_JGL_EMOJI: '<:JGL:770815197728079882>'
-      INHOUSE_BOT_MID_EMOJI: '<:MID:770815159765696544>'
-      INHOUSE_BOT_BOT_EMOJI: '<:BOT:770815119630401586>'
-      INHOUSE_BOT_SUP_EMOJI: '<:SUP:770815175619379210>'
+      INHOUSE_BOT_TOP_EMOJI: '<:Top:832034213590728725>'
+      INHOUSE_BOT_JGL_EMOJI: '<:Jungler:832034174596022282>'
+      INHOUSE_BOT_MID_EMOJI: '<:Midlaner:832034093709131817>'
+      INHOUSE_BOT_BOT_EMOJI: '<:Atirador:832034007977820160>'
+      INHOUSE_BOT_SUP_EMOJI: '<:Suporte:832034058233446400>'
 
     volumes:
       # Socket volume to connect to the database
@@ -43,7 +43,7 @@ services:
         target: /var/run/postgresql
     environment:
       # CHANGE THE PASSWORD BEFORE DEPLOYMENT
-      POSTGRES_PASSWORD: ⚠ USE_A_RANDOM_PASSWORD ⚠
+      POSTGRES_PASSWORD: migbevila26
       POSTGRES_DB: inhouse_bot
 
   # Simple database management tool (will use the password you set for the db service)
